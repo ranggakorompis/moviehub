@@ -10,7 +10,7 @@ import {
 import React from 'react';
 import Logo from '../Logo/Logo';
 
-const LoginForm = ({navigation}) => {
+const SignUp = () => {
   return (
     <SafeAreaView>
       <ImageBackground
@@ -19,7 +19,7 @@ const LoginForm = ({navigation}) => {
         <Logo />
         <View style={styles.container}>
           <View style={styles.formContainer}>
-            <Text style={styles.title}>Login</Text>
+            <Text style={styles.title}>Sign Up</Text>
             <View style={styles.inputFields}>
               <TextInput
                 style={styles.inputField}
@@ -34,9 +34,7 @@ const LoginForm = ({navigation}) => {
                 placeholderTextColor={'#E8E8E8'}
               />
             </View>
-            <TouchableOpacity
-              style={styles.buttonContainer}
-              onPress={() => navigation.navigate('SignUp')}>
+            <TouchableOpacity style={styles.buttonContainer}>
               <Text style={styles.buttonText}>Login</Text>
             </TouchableOpacity>
             <View
@@ -109,4 +107,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginForm;
+export default SignUp;
