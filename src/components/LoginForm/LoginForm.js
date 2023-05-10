@@ -36,15 +36,18 @@ const LoginForm = ({navigation}) => {
             </View>
             <TouchableOpacity
               style={styles.buttonContainer}
-              onPress={() => navigation.navigate('SignUp')}>
+              onPress={() => navigation.navigate('HomePage')}>
               <Text style={styles.buttonText}>Login</Text>
             </TouchableOpacity>
             <View
               style={{flexDirection: 'row', marginTop: 20, marginBottom: 20}}>
               <Text style={styles.subTitle}>Don't have account?</Text>
-              <Text style={[styles.subTitle, {color: 'white', marginLeft: 5}]}>
-                Create now
-              </Text>
+              <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
+                <Text
+                  style={[styles.subTitle, {color: 'white', marginLeft: 5}]}>
+                  Create now
+                </Text>
+              </TouchableOpacity>
             </View>
           </View>
         </View>

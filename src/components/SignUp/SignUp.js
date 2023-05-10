@@ -23,6 +23,16 @@ const SignUp = () => {
             <View style={styles.inputFields}>
               <TextInput
                 style={styles.inputField}
+                placeholder="Enter your name"
+                placeholderTextColor={'#E8E8E8'}
+              />
+              <TextInput
+                style={styles.inputField}
+                placeholder="Enter your userid"
+                placeholderTextColor={'#E8E8E8'}
+              />
+              <TextInput
+                style={styles.inputField}
                 placeholder="Enter your email"
                 keyboardType="email-address"
                 placeholderTextColor={'#E8E8E8'}
@@ -30,20 +40,12 @@ const SignUp = () => {
               <TextInput
                 style={styles.inputField}
                 placeholder="Enter your password"
-                secureTextEntry={true}
                 placeholderTextColor={'#E8E8E8'}
               />
             </View>
             <TouchableOpacity style={styles.buttonContainer}>
-              <Text style={styles.buttonText}>Login</Text>
+              <Text style={styles.buttonText}>Signup</Text>
             </TouchableOpacity>
-            <View
-              style={{flexDirection: 'row', marginTop: 20, marginBottom: 20}}>
-              <Text style={styles.subTitle}>Don't have account?</Text>
-              <Text style={[styles.subTitle, {color: 'white', marginLeft: 5}]}>
-                Create now
-              </Text>
-            </View>
           </View>
         </View>
       </ImageBackground>
@@ -99,6 +101,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 5,
     marginTop: 25,
+    marginBottom: 25,
   },
   buttonText: {
     fontSize: 20,
